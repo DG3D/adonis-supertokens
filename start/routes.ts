@@ -16,6 +16,8 @@ router
   .group(() => {
     router.post('/auth/signin', async () => {})
     router.post('/auth/signup', async () => {})
+    router.post('/auth/signout', async () => {})
+    router.post('/auth/session/refresh', async () => {})
     router.get('/auth/dashboard', async () => {})
     router.any('/auth/dashboard/*', async () => {})
     router.any('/auth/public/dashboard/*', async () => {})
